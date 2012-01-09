@@ -6,7 +6,7 @@
 # catalog-version v0.3
 Name:		texlive-latexfileversion
 Version:	v0.3
-Release:	1
+Release:	2
 Summary:	Prints the version and date of a LaTeX class or style file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexfileversion
@@ -17,7 +17,7 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Requires:	texlive-latexfileversion.bin
+Provides:	texlive-latexfileversion.bin = %{EVRD}
 
 %description
 This simple shell script prints the version and date of a LaTeX
@@ -36,6 +36,7 @@ must be given.
 
 #-----------------------------------------------------------------------
 %files
+%{_bindir}/latexfileversion
 %{_texmfdistdir}/scripts/latexfileversion/latexfileversion
 %doc %{_texmfdistdir}/doc/support/latexfileversion/ChangeLog
 %doc %{_texmfdistdir}/doc/support/latexfileversion/README
@@ -47,5 +48,9 @@ must be given.
 %build
 
 %install
+mkdir -p %{buildroot}%{_bindir}
+pushd %{buildroot}%{_bindir}
+    ln -sf %{_texmfdistdir}/scripts/latexfileversion/latexfileversion latexfileversion
+popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
