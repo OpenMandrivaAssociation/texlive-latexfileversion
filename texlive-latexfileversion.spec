@@ -54,3 +54,15 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
+
+
+%changelog
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.3-2
++ Revision: 759152
+- Correct provides and add bin script symlink.
+
+* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.3-1
++ Revision: 758933
+- texlive-latexfileversion
+- texlive-latexfileversion
+
