@@ -1,12 +1,12 @@
-# revision 25012
+# revision 29349
 # category Package
 # catalog-ctan /support/latexfileversion
-# catalog-date 2012-01-02 14:24:13 +0100
+# catalog-date 2012-05-22 13:29:11 +0200
 # catalog-license lppl
 # catalog-version v0.3
 Name:		texlive-latexfileversion
 Version:	v0.3
-Release:	2
+Release:	3
 Summary:	Prints the version and date of a LaTeX class or style file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexfileversion
@@ -54,15 +54,3 @@ pushd %{buildroot}%{_bindir}
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-
-
-%changelog
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.3-2
-+ Revision: 759152
-- Correct provides and add bin script symlink.
-
-* Mon Jan 09 2012 Paulo Andrade <pcpa@mandriva.com.br> v0.3-1
-+ Revision: 758933
-- texlive-latexfileversion
-- texlive-latexfileversion
-
