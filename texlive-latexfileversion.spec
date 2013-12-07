@@ -6,7 +6,7 @@
 # catalog-version v0.3
 Name:		texlive-latexfileversion
 Version:	v0.3
-Release:	5
+Release:	6
 Summary:	Prints the version and date of a LaTeX class or style file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexfileversion
