@@ -1,12 +1,6 @@
-# revision 29349
-# category Package
-# catalog-ctan /support/latexfileversion
-# catalog-date 2012-05-22 13:29:11 +0200
-# catalog-license lppl
-# catalog-version v0.3
 Name:		texlive-latexfileversion
-Version:	v0.3
-Release:	11
+Version:	0.3
+Release:	1
 Summary:	Prints the version and date of a LaTeX class or style file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexfileversion
