@@ -1,6 +1,6 @@
 Name:		texlive-latexfileversion
 Version:	0.3
-Release:	1
+Release:	2
 Summary:	Prints the version and date of a LaTeX class or style file
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/latexfileversion
