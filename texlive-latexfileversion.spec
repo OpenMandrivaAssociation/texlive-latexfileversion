@@ -3,7 +3,7 @@ Version:	29349
 Release:	2
 Summary:	Prints the version and date of a LaTeX class or style file
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/latexfileversion
+URL:		https://www.ctan.org/tex-archive/support/latexfileversion
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileversion.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latexfileversion.doc.r%{version}.tar.xz
